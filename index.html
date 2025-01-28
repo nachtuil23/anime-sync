@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Аниме Синхронизация</title>
+    <title>я еблан</title>
     <style>
         body {
             background-color: #121212;
@@ -23,7 +23,7 @@
             margin: 10px;
             font-size: 16px;
         }
-        video {
+        iframe {
             width: 80%;
             max-width: 800px;
             margin-top: 20px;
@@ -32,25 +32,13 @@
 </head>
 <body>
     <div class="container">
-        <h1>Совместный просмотр аниме</h1>
-        <input type="text" id="video-url" placeholder="Введите URL видео">
-        <button id="load-video">Загрузить видео</button>
-        <video id="video-player" controls></video>
+        <h1>Скибиди сигма эшкере</h1>
+        <input type="text" id="anime-name" placeholder="Введите название аниме">
+        <button id="search-anime">Поиск аниме</button>
+        <div id="anime-list"></div>
+        <iframe id="video-player" src="" frameborder="0" allowfullscreen></iframe>
     </div>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const videoPlayer = document.getElementById('video-player');
-            const videoUrlInput = document.getElementById('video-url');
-            const loadVideoButton = document.getElementById('load-video');
-
-            loadVideoButton.addEventListener('click', () => {
-                const videoUrl = videoUrlInput.value;
-                if (videoUrl) {
-                    videoPlayer.src = videoUrl;
-                    videoPlayer.play();
-                }
-            });
-        });
-    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
